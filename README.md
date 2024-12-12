@@ -8,6 +8,7 @@ CI/CD тайлбар:
 Уг программ нь Vite , React ашиглан app дээр 
 
 expect(screen.getByText("Vite + React")).toBeInTheDocument();
+
 fireEvent.click(button);
 
 гэх мэт энгийн үйлдлүүдээр шалгаж байна.
