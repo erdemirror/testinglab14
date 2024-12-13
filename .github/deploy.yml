@@ -29,20 +29,23 @@ jobs:
       # Install dependencies
       - name: Install dependencies
         run: npm install
+        working-directory: ./lab14/testinglab14
 
-      # Run testss
+      # Run tests
       - name: Run tests
         run: npm test
+        working-directory: ./lab14/testinglab14
 
       # Build the project
       - name: Build project
         run: npm run build
+        working-directory: ./lab14/testinglab14
 
-      # Deploy to Vercels
+      # Deploy to Vercel
       - name: Deploy to Vercel
         uses: amondnet/vercel-action@v20
         with:
           vercel-token: WtPgZNbRUgysRq1fsbGqTm55
           vercel-org-id: 6vNH8OEVwOwWFrXzo9O9mIK3
           vercel-project-id: prj_Vuf3eDrQUOT54chvu1vx0mYDOGnH
-          working-directory: .
+          working-directory: ./lab14/testinglab14
