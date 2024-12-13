@@ -38,7 +38,7 @@ jobs:
       - name: Build project
         run: npm run build
 
-      # Deploy to Vercel
+      # Deploy to Vercels
       - name: Deploy to Vercel
         uses: amondnet/vercel-action@v20
         with:
